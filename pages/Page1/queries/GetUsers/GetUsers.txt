@@ -1,0 +1,2 @@
+SELECT * FROM public."users" 
+OFFSET {{Users.pageOffset}} LIMIT {{Users.pageSize}};

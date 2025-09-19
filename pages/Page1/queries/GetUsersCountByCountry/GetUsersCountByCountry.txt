@@ -1,0 +1,2 @@
+SELECT COUNT(id) FROM public."users"
+WHERE country = {{this.params.country}};

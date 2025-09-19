@@ -1,0 +1,10 @@
+SELECT
+  *
+FROM
+  public.users
+ORDER BY
+  "{{Users.sortOrder.column || 'id'}}" {{Users.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Users.pageSize}}
+OFFSET
+  {{Users.pageOffset}}
